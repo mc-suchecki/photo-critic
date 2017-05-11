@@ -36,3 +36,16 @@
 .score-bar {
     clear: both;
 }
+
+.photo-thumbnail {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.photo-input {
+    margin: 0 auto;
+}
+
+.spinner {
+    text-align: center;
+}

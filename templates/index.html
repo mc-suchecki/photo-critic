@@ -7,7 +7,8 @@
     <title>Photo Critic</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="/static/main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/main.css"/>
 </head>
 <body>
 <div class="container-fluid">
@@ -16,26 +17,36 @@
     </div>
     <div class="row">
         <div class="col-md-6">
+            <!-- TODO enable drag and drop -->
+            <!-- TODO add support for multiple images -->
+            <img id="photo" class="hidden photo-thumbnail" src=""/>
             <div class="aspect-ratio-fix">
                 <div class="drag-and-drop-area">
                     <p class="text-centered">
-                        Drag and drop a photo to calculate its aesthetics score,<br>
-                        or many photos to sort them by their score!
+                        Select a single photo below to calculate its aesthetics score!<br>
                     </p>
-                    <p class="text-primary text-centered">You can also just select photos by clicking here.</p>
+                    <!-- or many photos to sort them by their score! -->
+                    <!--<p class="text-centered">You can also just select photos by clicking below:</p>-->
+                    <input type="file" id="photo-input" class="photo-input" accept="image/gif, image/jpeg, image/png"/>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
-            <h4 class="score-title">Photo aesthetics score:</h4>
-            <span class="photo-score">not available</span>
-            <div class="progress score-bar">
-                <div class="progress-bar progress-bar-success" role="progressbar" style="width: 0%;">
+            <div id="spinner" class="hidden spinner">
+                <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+            </div>
+            <div id="score">
+                <h4 class="score-title">Photo aesthetics score:</h4>
+                <span class="photo-score" id="score-text">not available</span>
+                <div class="progress score-bar">
+                    <div class="progress-bar progress-bar-success" id="score-bar" role="progressbar" style="width: 0%;">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!-- TODO about section in the footer -->
+<script type="text/javascript" src="/static/main.js"></script>
 </body>
 </html>
