@@ -1,0 +1,38 @@
+.app-title {
+    margin-bottom: 20px;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.aspect-ratio-fix {
+    width: 100%;
+    padding-bottom: 66.66%;
+    position: relative;
+}
+
+.drag-and-drop-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px dashed #ccc;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.score-title {
+    float: left;
+}
+
+.photo-score {
+    float: right;
+    margin-top: 12px;
+}
+
+.score-bar {
+    clear: both;
+}

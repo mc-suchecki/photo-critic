@@ -1,16 +1,41 @@
 <html lang="pl">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="mc">
-  <title>Photo Critic</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="mc">
+    <title>Photo Critic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/main.css" />
 </head>
 <body>
-  <div class="container-fluid">
-      Hello World
-  </div>
+<div class="container-fluid">
+    <div class="row app-title">
+        <h1 class="text-centered">Try the photo critic!</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="aspect-ratio-fix">
+                <div class="drag-and-drop-area">
+                    <p class="text-centered">
+                        Drag and drop a photo to calculate its aesthetics score,<br>
+                        or many photos to sort them by their score!
+                    </p>
+                    <p class="text-primary text-centered">You can also just select photos by clicking here.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h4 class="score-title">Photo aesthetics score:</h4>
+            <span class="photo-score">not available</span>
+            <div class="progress score-bar">
+                <div class="progress-bar progress-bar-success" role="progressbar" style="width: 0%;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- TODO about section in the footer -->
 </body>
 </html>
