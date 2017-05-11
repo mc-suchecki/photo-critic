@@ -34,13 +34,14 @@
         <div class="col-md-6">
             <div id="spinner" class="hidden spinner">
                 <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+                <p class="hidden" id="resizing"><strong>resizing the photo...</strong></p>
+                <p class="hidden" id="analyzing"><strong>analyzing the photo...</strong></p>
             </div>
             <div id="score">
                 <h4 class="score-title">Photo aesthetics score:</h4>
                 <span class="photo-score" id="score-text">not available</span>
                 <div class="progress score-bar">
-                    <div class="progress-bar progress-bar-success" id="score-bar" role="progressbar" style="width: 0%;">
-                    </div>
+                    <div class="progress-bar" id="score-bar" role="progressbar"></div>
                 </div>
             </div>
         </div>
@@ -48,5 +49,6 @@
 </div>
 <!-- TODO about section in the footer -->
 <script type="text/javascript" src="/static/main.js"></script>
+<script type="text/javascript" src="/static/image-tools.js"></script>
 </body>
 </html>

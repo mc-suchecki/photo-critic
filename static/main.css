@@ -37,6 +37,11 @@
     clear: both;
 }
 
+.progress-bar {
+    width: 0;
+    transition: width 2s ease;
+}
+
 .photo-thumbnail {
     width: 100%;
     margin-bottom: 20px;
@@ -48,4 +53,8 @@
 
 .spinner {
     text-align: center;
+}
+
+.spinner p {
+    margin-top: 10px;
 }
