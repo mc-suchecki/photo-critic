@@ -2,7 +2,6 @@ import logging
 import sys
 import io
 import zmq
-import pexpect
 
 from PIL import Image
 from flask import Flask
