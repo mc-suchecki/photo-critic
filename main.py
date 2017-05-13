@@ -21,6 +21,7 @@ app.config.from_object('config')
 context = zmq.Context()
 port = "6666"
 ssh_password = environ.get("SSH_PASSWORD")
+app.logger.info("Password is {}.".format(ssh_password))
 app.logger.info("Connecting to titan.elka.pw.edu.pl...")
 socket = context.socket(zmq.REQ)
 ssh.tunnel_connection(socket, "tcp://localhost:6666", "msucheck@mion.elka.pw.edu.pl", password=ssh_password)
