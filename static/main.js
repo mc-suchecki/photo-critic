@@ -25,7 +25,7 @@ function assessPhoto(photo) {
     document.getElementById("spinner").classList.remove("hidden");
     document.getElementById("resizing").classList.remove("hidden");
     // resize the image and send it to the backend to analyze it afterwards
-    ImageTools.resize(photo, {width: 240, height: 999}, sendPhotoToBackend);
+    ImageTools.resize(photo, {width: 480, height: 480}, sendPhotoToBackend);
 }
 
 function sendPhotoToBackend(blob, didItResize) {
@@ -42,7 +42,6 @@ function sendPhotoToBackend(blob, didItResize) {
             displayScore(result.score);
         }
     };
-    console.log(blob);
     request.send(blob);
 }
 
